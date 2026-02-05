@@ -1,0 +1,14 @@
+header {
+    background-color: aqua;
+    height: 200px;
+    border: 2px solid;
+    border-color: black;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+footer {
+    font-size: 2rem;
+}
