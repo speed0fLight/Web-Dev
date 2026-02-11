@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* top portion of template
+    navbar, 
+    header
+*/
+nav,
+header {
+    font-weight: bold;
+    padding: 2px;
+    background-color: rgb(10, 255, 132);
+}
+
+
+.links {
+    list-style: none;
+    padding: 5px;
+    display: flex;
+}
+
+.links a {
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    display: block;
+    background-color: rgb(0, 127, 34);
+    border-radius: 12px;
+}
+
+.links a:hover,
+.links a:active,
+.links a.active {
+    background-color: rgb(27, 255, 91);
+}
+
+main {
+    border-top: solid 3px;
+    background-color: rgb(2, 221, 126);
+    min-height: 500px;
+
+    background-image: url(images/bridge.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+#indexTextDiv {
+    justify-content: center;
+    display: flex;
+}
+
+/* image container has the h1 + img */
+.imageContainer {
+    width: 100%;
+    justify-content: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imageContainer div {
+    margin: 10px;
+}
+
+.imageContainer div h1 {
+    background-color: cadetblue;
+   display: flex;
+   justify-content: center;
+}
+
+.imageContainer div img {
+    height: 300px;
+    width: 300px;
+}
+
+/* links page */
+#linkContainer {
+    margin: 10px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#linkContainer a {
+    text-decoration: none;
+    color: green;
+}
+
+/* contact page */
+#contactContainer {
+    background-color: aqua;
+
+    display: flex; 
+    justify-content: center;
+}
+
+#contactContainer a {
+    text-decoration: none;
+    color: green;
+}
+
+/* bottom portion of template
+    footer
+*/
+footer {
+    font-size: 2rem;
+    background-color: rgb(13, 183, 98);
+    padding: 10px;
+}
+footer h5 {
+    font-size: smaller;
+    font-weight: lighter;
+    justify-content: center;
+    display: flex;
+}
