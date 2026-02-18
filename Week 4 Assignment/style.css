@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(1, 204, 255);
+}
+
+header {
+    background-color: rgb(1, 204, 255);
+    padding: 5px;
+}
+
+.navbar {
+    background-color: rgb(0, 195, 255);
+    padding: 5px;
+    list-style: none;
+    display: flex;
+}
+
+.navbar a {
+    border-radius: 3px;
+    margin: 5px;
+    padding: 5px;
+    color: black;
+
+    background-color: rgb(63, 145, 227);
+    text-decoration: none;
+    display: block;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background-color: rgb(16, 122, 236);
+}
+
+main {
+    background-color: rgb(127, 232, 255);
+    min-height: 500px;
+}
+
+footer {
+    min-height: 100px;
+    background-color: rgb(1, 204, 255);
+}
+
+.footerDiv {
+    padding: 50px;
+    align-items: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+/* End of template */
+
+/* store.html */
+#storeFrameContainer {
+    padding: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#storeFrameContainer div.itemFrame {
+    background-color: rgb(171, 235, 237);
+
+    width: 20%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px solid;
+    border-radius: 2px;
+}
+
+
+#storeFrameContainer div.itemFrame > div.itemFrameRow {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(171, 235, 237);
+}
+
+#storeFrameContainer div.itemFrame > div.itemFrameRow img {
+    width: 100%;
+    height: 200px;
+    
+    object-fit: contain; 
+}
+
+/* locations.html */
+
+#locationTable {
+    margin: 20px;
+    padding: 10px;
+
+    background-color: aqua;
+    border: 2px solid;
+}
+
+/* misc */
+.center {
+    display: flex; 
+    justify-content: center;
+}
