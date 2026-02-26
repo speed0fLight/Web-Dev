@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* quick classes */
+.center {
+    display: flex;
+    justify-content: center;
+}
+.bold {
+    font-weight: bold;
+}
+
+/* Template */
+body {
+    background-color: rgb(255, 202, 43);
+}
+
+header {
+    padding: 5px;
+    background-color: rgb(255, 202, 43);
+}
+
+.navbar {
+    justify-content: center;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    background-color: rgb(255, 224, 131);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(255, 191, 0);
+    margin: 5px;
+    padding: 5px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background-color: rgb(191, 85, 3);
+}
+
+main {
+    background-color: bisque;
+    min-height: 500px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+    background-color: rgb(255, 202, 43);
+    min-height: 100px;
+}
+/* end of template */
+
+/* store */
+#catalogFrame {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    background-color: bisque;
+}
+
+/* itemFrame > img, p */
+.itemFrame {
+    box-shadow: 6px 5px 20px;
+    border-radius: 5%;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+
+    background-color: rgb(255, 234, 0);
+}
+.itemFrame img {
+    object-fit: contain;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    background-color: white;
+
+    height: 200px;
+    width: 200px;
+}
+.itemFrame p {
+    padding: 2px;
+    display: flex;
+    width: 200px;
+}
+
+/* Locations */
+#locationsSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.locationsImageFrame {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 400px;
+
+    background-color: rgb(225, 255, 0);
+}
+
+.locationsImageFrame img {
+    max-width: 100%;
+}
+
+/* News */
+#news {
+    padding: 5px;
+    columns: 2;
+    column-gap: normal;
+
+    column-rule: 2px solid;
+}
