@@ -69,7 +69,7 @@ footer {
 #storeFrameContainer div.itemFrame {
     background-color: rgb(171, 235, 237);
 
-    width: 20%;
+    width: 200px;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -98,8 +98,15 @@ footer {
     margin: 20px;
     padding: 10px;
 
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     border: 2px solid;
+}
+
+#locationTable th {
+    background-color: rgb(255, 255, 255);
+}
+#locationTable tr:nth-child(odd) {
+    background-color: rgb(210, 210, 210);
 }
 
 /* misc */
