@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* helper classes */
+.center {
+    display: flex;
+    justify-content: center;
+}
+.bold {
+    font-weight: bold;
+}
+
+/* page template */
+
+body {
+    background-color: rgb(255, 190, 93);
+}
+
+header {
+    background-color: rgb(232, 101, 0);
+    padding: 5px;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    padding: 5px;
+
+    background-color: orange;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+    display: block;
+    background-color: rgb(255, 204, 0);
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background-color: rgb(255, 236, 162);;
+}
+
+main {
+    min-height: 600px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+    min-height: 100px;
+    background-color: rgb(232, 101, 0);
+}
+
+/* hover mouse */
+#minigame-frame {
+    display: flex;
+}
+
+#movingSquare {
+    width: 100px;
+    aspect-ratio: 1;
+    position: relative;
+
+    background-color: blue;
+    transition: transform 5s ease-out;
+}
+
+#movingSquare:hover {
+    transform: translateX(600px);
+}
+
+#endSquare {
+    text-align: center;
+    margin-left: 500px;
+    width: 100px;
+    aspect-ratio: 1;
+    background-color: white;
+
+    border: 2px solid;
+}
+
+/* spinning logo */
+#spinningLogo {
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    color: yellow;
+
+    border: 3px solid black;
+    border-radius: 25px;
+    background-image: linear-gradient(90deg, rgb(255, 183, 0), rgb(255, 115, 0));
+
+    animation: spin 2s linear 0s infinite;
+    background-color: red;
+}
+
+@keyframes spin {
+    from {transform: rotate3d(0,1,0, 0deg);}
+    to {transform: rotate3d(0,1,0, 360deg);}
+}
