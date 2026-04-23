@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cardio</h1>
+        <h5>A company that teaches card games to all ages.</h5>
+    </header>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="cards.html">Cards</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h4 class="center">Card game demo</h4>
+        <section>
+            <h1 id="cardCount">Card Count:</h1>
+            <h1 id="cardType">Card Type: None</h1>
+            <div class="forceBox outline" id="pile" onclick="clickPile();">
+                <img id="pileImage" src="images/cardback.png" height="100">
+            </div>
+            <div class="forceBox outline" id="discard" onclick="clickDiscard();">
+                <img id="discardImage" height="100">
+            </div>
+            <script src="javascript/cards.js"></script>
+            <script>
+                init();
+            </script>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h4 class="center">Cardio &copy;</h4>
+        </div>
+    </footer>
+</body>
+
+</html>

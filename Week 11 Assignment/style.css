@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* helper classes */
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: rgb(158, 255, 190);
+}
+
+/* template */
+header {
+    padding: 5px;
+
+    background-color: rgb(105, 239, 116);
+}
+
+.navbar {
+    background-color: rgb(28, 142, 36);
+    height: 50px;
+
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.navbar a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    height: 100%;
+    background-color: rgb(86, 169, 116);
+
+    color: rgb(0, 0, 0);
+}
+
+.navbar a.active,
+.navbar a:hover {
+    background-color: rgb(158, 255, 190);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    min-height: 50px;
+    background-color: rgb(105, 239, 116);
+}
+
+footer div {
+    align-self: center;
+}
+
+/* cards.html */
+.outline {
+    border: 3px solid;
+}
+.forceBox {
+    margin: 50px;
+    padding: 5px;
+    display: flex;
+    height: 120px;
+    width: 85px;
+}

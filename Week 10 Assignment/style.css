@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* quick classes */
+
+.center {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/* template */
+body {
+    background-color: rgb(116, 255, 190);   
+}
+
+header {
+    padding: 5px;
+
+    background-color: rgb(0, 255, 136);
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+    background-color: rgb(0, 218, 116);
+}
+
+.navbar a {
+    display: block;
+    padding: 5px;
+    min-height: 35px;
+    font-size: large;
+
+
+    background-color: rgb(0, 237, 126);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.navbar a.active {
+    background-color: rgb(116, 255, 190);
+}
+
+main {
+    background-color: rgb(116, 255, 190);
+}
+
+footer {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    min-height: 50px;
+    width: 100%;
+    align-content: center;
+    
+    background-color: rgb(0, 255, 136);
+}
+
+/* budgetApp.html */
+/* 
+two sides of the screen 
+left = add expenses, options, etc.
+right = total calcuations
+*/
+#appWindowContainer {
+    display: flex;
+}
+
+#appLeftWindow {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    min-height: 500px;
+    
+    background-color: rgb(76, 205, 138);
+}
+
+#appLeftWindow div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBlock {
+    display: flex;
+    flex-direction: row;
+}
+
+.inputBlock input {
+    width: 70%;
+    margin: 5px;
+}
+
+.inputBlock label {
+    width: 200px;
+    margin: 5px;
+}
+
+#itemButtons button {
+    width: 150px;
+    height: 40px;
+    
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 3px;
+}
+
+/* right side of app */
+
+#appRightWindow {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    min-height: 500px;
+    
+    background-color: rgb(47, 201, 88);
+}
+
+tr:nth-child(even){background-color: rgb(201, 201, 201);}
+td, th {
+    border: 1px solid rgb(159, 159, 159);
+    padding: 8px;
+}
+table {
+    background-color: white;
+    border-collapse: collapse;
+}
+
+#appRightWindow div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
