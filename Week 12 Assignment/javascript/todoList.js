@@ -1,64 +1,58 @@
 // Names
-// tasksContainer <div>           : Stores the tasks
-// removeSelectedButton <button>  : Removes selected button
-// addButton <button>             : Adds the task and clears input field
-// taskInputBox <input>           : The description of the task
-
-const tasksContainer = document.querySelector("#tasksContainer");
-const removeSelectedButton = document.querySelector("#removeSelectedButton");
-const addButton = document.querySelector("#addButton");
-const taskInputBox = document.querySelector("#taskInputBox");
+// #tasksContainer         : Stores the tasks
+// #removeSelectedButton   : Removes selected tasks
+// #addButton              : Adds the task and clears input field
+// #taskInputBox           : The description of the task
 
 const taskList = [];
+let nextId = 0;
 
 function addTask() {
-    if (taskInputBox.value != "") {
-        // add the task
-        taskList.push(taskInputBox.value);
+    const taskText = $("#taskInputBox").val().trim();
 
-        taskInputBox.value = "";
+    if (taskText !== "") {
+        taskList.push({
+            id: nextId,
+            text: taskText
+        });
 
+        nextId++;
+        $("#taskInputBox").val("");
         refreshTasks();
     }
 }
 
 function removeSelectedTasks() {
-    let length = taskList.length;
-    for (let i = 0; i < length; i++) {
-        let taskName = taskList[i];
+    for (let i = taskList.length - 1; i >= 0; i--) {
+        const checkboxId = "#task-" + taskList[i].id;
 
-        let taskInputField = document.querySelector("#" + taskName)
-        if (taskInputField.checked) {
-            // remove the checked task
-            taskList.splice(i,1);
-
-            //reduce length as well
-            length -= 1;
-
-            // resume at same index
-            i -= 1;
-            continue;
+        if ($(checkboxId).is(":checked")) {
+            taskList.splice(i, 1);
         }
     }
-    
+
     refreshTasks();
 }
 
 function refreshTasks() {
-    htmlString = "";
+    let htmlString = "";
+
     taskList.forEach(task => {
-        htmlString += `<p> <input id=${task} type="checkbox"> <label>${task}</label> </p>`;
+        htmlString += `
+            <p>
+                <input id="task-${task.id}" type="checkbox">
+                <label for="task-${task.id}">${task.text}</label>
+            </p>
+        `;
     });
 
-    tasksContainer.innerHTML = htmlString;
+    $("#tasksContainer").html(htmlString);
 }
 
-addButton.addEventListener('click', () => {
+$("#addButton").click(function () {
     addTask();
 });
 
-removeSelectedButton.addEventListener('click', () => {
+$("#removeSelectedButton").click(function () {
     removeSelectedTasks();
 });
-
-//refreshTasks();
