@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* helper classes */
+.center {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/* template */
+body {
+    background-color: rgb(222, 73, 215);
+}
+
+header {
+    background-color: rgb(243, 149, 255);
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+
+    background-color: purple;
+}
+
+.navbar a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+    min-width: 100px;
+    min-height: 50px;
+    text-align: center;
+    align-content: center;
+
+    text-decoration: none;
+    color: black;
+    background-color: rgb(176, 56, 170);
+}
+.navbar a.active,
+.navbar a:hover {
+    background-color: rgb(222, 73, 215);
+}
+
+footer {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    min-height: 50px;
+
+    background-color: rgb(243, 149, 255);
+}
+
+/* todoList.html */
+#taskInputBox {
+    width: 200px;
+}
+
+#tasksContainer {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 400px;
+
+    background-color: rgba(0, 0, 0, 0.103);
+}
+#tasksContainer p {
+    display: flex; 
+    justify-content: center;
+}

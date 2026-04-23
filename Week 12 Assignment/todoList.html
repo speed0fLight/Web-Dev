@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Notely</h1>
+        <p>This company provides a simple application for note-taking and task management.</p>
+    </header>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="todoList.html">Todo List</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h3 class="center">Todo List</h3>
+
+        <p class="center">
+            <input id="taskInputBox" placeholder="Objective/Task">
+            <button id="addButton">Add</button>
+        </p>
+        <p class="center">
+            <button id="removeSelectedButton">Remove Selected</button>
+        </p>
+        <div id="tasksContainer">
+            <!-- tasks show up here -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="center"><h4>Notely 2026 &copy;</h4></div>
+    </footer>
+
+    <script src="javascript/todoList.js"></script>
+</body>
+</html>
