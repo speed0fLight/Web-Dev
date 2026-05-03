@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>QuarterBack!</h1>
+        <h4>A company that shows you discounted automobiles.</h4>
+    </header>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fetchMenu.html">Fetch Vehicles</a></li>
+            <li><a class="loginPageButton" href="login.html">Login</a></li>
+            <li><a class="registerPageButton active"  href="register.html">Register</a></li> 
+            <li><a class="logoutButton">Logout</a></li> 
+        </ul>
+    </nav>
+    <main>
+        <div class="center">
+            <div id="registerBlock">
+                <h3 class="center">Enter your registration information</h3>
+                <div>
+                    <label for="registerEmailField">Email:</label>
+                    <input id="registerEmailField" type="email" placeholder="example@example.com" required>
+                </div>
+                <div>
+                    <label>
+                        Password:
+                    </label>
+                    <input id="registerPasswordField" type="text">
+                </div>
+                <div>
+                    <label>Re-enter Password:</label>
+                    <input type="text">
+                </div>
+
+                <h3 class="center">Address</h3>
+
+                <div>
+                    <label>Street:</label>
+                    <input id="registerStreetField" type="text">
+                </div>
+                <div>
+                    <label>City:</label>
+                    <select id="registerCitiesField" required>
+                        <option selected disabled value=""></option>
+                        <option value="Bridgeport">Bridgeport</option>
+                        <option value="Stamford">Stamford</option>
+                        <option value="New Haven">New Haven</option>
+                        <option value="Waterbury">Waterbury</option>
+                        <option value="Hartford">Hartford</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Zip Code:</label>
+                    <input type="text" id="registerZipcodeField">
+                </div>
+                <h3 class="center">Information</h3>
+
+                <div>
+                    <label for="registerIsNewsOptIn">Subscribe to the newsletter</label>
+                    <input id="registerIsNewsOptIn" type="checkbox">
+                </div>
+
+                <div>
+                    <label>Interests:</label>
+                    <textarea id="registerInterestsField" rows="7" cols="55"></textarea><br>
+                </div>
+                <span>
+                    <label>Gender:</label>
+                    <input type="radio" name="gender" id="registerGenderMale"><label>Male</label>
+                    <input type="radio" name="gender" id="registerGenderFemale"><label>Female</label>
+                </span>
+                <button id="registerButton" class="center">Submit</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h4 class="center">QuarterBack&copy; 2026 All rights reserved</h4>
+        </div>
+    </footer>
+
+    <script src="javascript/jquery-4.0.0.js"></script>
+    <script src="javascript/user.js"></script>
+</body>
+
+</html>

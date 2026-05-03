@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>QuarterBack!</h1>
+        <h4>A company that shows you discounted automobiles.</h4>
+    </header>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fetchMenu.html">Fetch Vehicles</a></li>
+            <li><a class="loginPageButton active" href="login.html">Login</a></li>
+            <li><a class="registerPageButton"  href="register.html">Register</a></li> 
+            <li><a class="logoutButton">Logout</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="center">
+            <div id="loginBlock">
+                    <h3 class="center">Enter your login information</h3>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input id="loginEmailField" type="email" placeholder="example@example.com" required>
+                    </div>
+                    <div>
+                        <label type="text"pattern="[a-zA-Z0-9]+" required>
+                            Password:
+                        </label>
+                        <input id="loginPasswordField" type="password" name="password">
+                    </div>
+                    
+                    <button id="loginButton" class="center">Submit</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h4 class="center">QuarterBack&copy; 2026 All rights reserved</h4>
+        </div>
+    </footer>
+    
+    <script src="javascript/jquery-4.0.0.js"></script>
+    <script src="javascript/user.js"></script>
+</body>
+</html>
